@@ -29,10 +29,19 @@
         android:id="@+id/btn_viewModel_fragment"
         style="@style/HomepageButtonStyle"
         android:text="@string/viewModel_multiFragment"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btn_live_data_timer"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_viewModel" />
+
+    <Button
+        android:id="@+id/btn_live_data_timer"
+        style="@style/HomepageButtonStyle"
+        android:text="@string/liveData"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_viewModel_fragment" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

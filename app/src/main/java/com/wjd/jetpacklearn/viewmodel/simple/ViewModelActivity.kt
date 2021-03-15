@@ -4,7 +4,7 @@ import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import com.wjd.jetpacklearn.databinding.ActivityViewModelBinding
+import com.wjd.jetpacklearn.databinding.ActivityTimerBinding
 
 /**
  * ViewModel
@@ -14,11 +14,11 @@ import com.wjd.jetpacklearn.databinding.ActivityViewModelBinding
  */
 class ViewModelActivity : AppCompatActivity(), TestViewModel.View {
 
-    var viewBinding: ActivityViewModelBinding? = null
+    var viewBinding: ActivityTimerBinding? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        viewBinding = ActivityViewModelBinding.inflate(layoutInflater)
+        viewBinding = ActivityTimerBinding.inflate(layoutInflater)
         setContentView(viewBinding!!.root)
         /*
         需要implementation androidx.activity:activity-ktx

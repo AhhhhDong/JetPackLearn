@@ -20,6 +20,7 @@
         <activity android:name=".viewbinding.ViewBindingActivity" />
         <activity android:name="com.wjd.jetpacklearn.viewmodel.simple.ViewModelActivity" />
         <activity android:name=".viewmodel.multi_fragment.ViewModelFragmentActivity" />
+        <activity android:name=".livedata.TimerLiveDataActivity" />
     </application>
 
 </manifest>
