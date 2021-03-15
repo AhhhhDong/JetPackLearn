@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="HomepageButtonStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!--新API中此选项默认未true，会导致英文字母全是大写-->
+        <item name="textAllCaps">false</item>
+    </style>
+</resources>

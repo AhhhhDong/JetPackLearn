@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">JetpackLearn</string>
+    <string name="viewModel">ViewModel</string>
+    <string name="viewBindingExample">这是一个ViewBinding的实例</string>
+    <string name="viewBinding">ViewBinding</string>
+    <string name="fragment1">fragment1</string>
+    <string name="fragment2">fragment2</string>
+    <string name="click_to_send">点击发送数据</string>
+    <string name="viewModel_multiFragment">ViewModel+MultiFragment</string>
+</resources>
