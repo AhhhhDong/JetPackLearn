@@ -1,21 +1,20 @@
 package com.wjd.jetpacklearn.viewmodel.multi_fragment
 
 import android.os.Bundle
-import android.os.PersistableBundle
 import androidx.appcompat.app.AppCompatActivity
 import com.wjd.jetpacklearn.R
-import com.wjd.jetpacklearn.databinding.ActivityViewModelFragmentBinding
+import com.wjd.jetpacklearn.databinding.ActivityMultiFragmentBinding
 
 /**
  * viewModel，单Activity多Fragment之间通过viewModel传递数据
  */
-class ViewModelFragmentActivity : AppCompatActivity() {
+class MultiFragmentActivity : AppCompatActivity() {
 
-    lateinit var viewBinding: ActivityViewModelFragmentBinding
+    lateinit var viewBinding: ActivityMultiFragmentBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        viewBinding = ActivityViewModelFragmentBinding.inflate(layoutInflater)
+        viewBinding = ActivityMultiFragmentBinding.inflate(layoutInflater)
         setContentView(viewBinding.root)
         addFragment()
     }
