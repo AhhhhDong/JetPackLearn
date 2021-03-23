@@ -17,8 +17,11 @@ interface StudentDao {
     @Update
     fun updateStudent(student: Student)
 
+//    @Query("SELECT * FROM student WHERE name = :name")
+//    fun queryStudentByName(name: String): Student
+
     @Query("SELECT * FROM student WHERE name = :name")
-    fun queryStudentByName(name: String): Student
+    fun queryStudentByName(name: String): LiveData<Student>
 
     @Query("SELECT * FROM student")
     fun queryAllStudent(): LiveData<List<Student>>

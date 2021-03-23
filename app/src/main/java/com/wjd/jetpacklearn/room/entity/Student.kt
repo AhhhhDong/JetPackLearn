@@ -14,5 +14,6 @@ data class Student(
     @ColumnInfo(name = "age", typeAffinity = ColumnInfo.INTEGER)
     var age: Int
 ) {
-
+    @Ignore
+    constructor(name: String, age: Int) : this(-1, name, age)
 }
