@@ -47,10 +47,19 @@
         android:id="@+id/btn_live_data_multi_fragment"
         style="@style/HomepageButtonStyle"
         android:text="@string/liveData_multiFragment"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btn_room"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_live_data_timer" />
+
+    <Button
+        android:id="@+id/btn_room"
+        style="@style/HomepageButtonStyle"
+        android:text="@string/room"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_live_data_multi_fragment" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

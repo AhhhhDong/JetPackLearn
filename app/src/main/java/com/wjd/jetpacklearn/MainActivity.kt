@@ -24,6 +24,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         binding.btnViewModelFragment.setOnClickListener(this)
         binding.btnLiveDataTimer.setOnClickListener(this)
         binding.btnLiveDataMultiFragment.setOnClickListener(this)
+        binding.btnRoom.setOnClickListener(this)
     }
 
     override fun onClick(view: View) {
@@ -33,6 +34,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             binding.btnViewModelFragment.id -> startActivity(MultiFragmentActivity::class.java)
             binding.btnLiveDataTimer.id -> startActivity(TimerLiveDataActivity::class.java)
             binding.btnLiveDataMultiFragment.id -> startActivity(com.wjd.jetpacklearn.livedata.multi_fragment.MultiFragmentActivity::class.java)
+            binding.btnRoom.id -> startActivity()
         }
     }
 

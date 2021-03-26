@@ -22,6 +22,7 @@
         <activity android:name=".viewmodel.multi_fragment.MultiFragmentActivity" />
         <activity android:name=".livedata.timer.TimerLiveDataActivity" />
         <activity android:name=".livedata.multi_fragment.MultiFragmentActivity" />
+        <activity android:name=".room.RoomActivity" />
     </application>
 
 </manifest>

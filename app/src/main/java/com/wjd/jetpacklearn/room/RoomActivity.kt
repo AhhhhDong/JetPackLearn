@@ -25,7 +25,9 @@ class RoomActivity : AppCompatActivity(), View.OnClickListener {
 
     private fun initView() {
         initAdapter()
-
+        viewBinding.btnAdd.setOnClickListener(this)
+        viewBinding.btnDelete.setOnClickListener(this)
+        viewBinding.btnEdit.setOnClickListener(this)
     }
 
     private fun initAdapter() {

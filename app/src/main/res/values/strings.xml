@@ -9,4 +9,5 @@
     <string name="viewModel_multiFragment">ViewModel+MultiFragment</string>
     <string name="liveData">LiveData+Timer</string>
     <string name="liveData_multiFragment">LiveData+MultiFragment</string>
+    <string name="room">Room</string>
 </resources>
