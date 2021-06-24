@@ -1,19 +1,16 @@
 package com.wjd.jetpacklearn.room.entity
 
-import androidx.room.ColumnInfo
-import androidx.room.Entity
-import androidx.room.Ignore
-import androidx.room.PrimaryKey
+import androidx.room.*
 
-@Entity(tableName = "student")
+@Entity(tableName = "student",indices = [Index(value = ["date"],unique = true)])
 data class Student(
     @PrimaryKey(autoGenerate = true)
-    val id: Int,
+    val id: Int?,
     @ColumnInfo(name = "name", typeAffinity = ColumnInfo.TEXT, defaultValue = "")
     var name: String,
     @ColumnInfo(name = "age", typeAffinity = ColumnInfo.INTEGER)
     var age: Int
 ) {
     @Ignore
-    constructor(name: String, age: Int) : this(-1, name, age)
+    constructor(name: String, age: Int) : this(null, name, age)
 }

@@ -22,7 +22,9 @@
         <activity android:name=".viewmodel.multi_fragment.MultiFragmentActivity" />
         <activity android:name=".livedata.timer.TimerLiveDataActivity" />
         <activity android:name=".livedata.multi_fragment.MultiFragmentActivity" />
-        <activity android:name=".room.RoomActivity" />
+        <activity
+            android:name=".room.RoomActivity"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
     </application>
 
 </manifest>

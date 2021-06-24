@@ -7,6 +7,7 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.wjd.jetpacklearn.databinding.ActivityMainBinding
 import com.wjd.jetpacklearn.livedata.timer.TimerLiveDataActivity
+import com.wjd.jetpacklearn.room.RoomActivity
 import com.wjd.jetpacklearn.viewbinding.ViewBindingActivity
 import com.wjd.jetpacklearn.viewmodel.multi_fragment.MultiFragmentActivity
 import com.wjd.jetpacklearn.viewmodel.simple.ViewModelActivity
@@ -34,7 +35,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             binding.btnViewModelFragment.id -> startActivity(MultiFragmentActivity::class.java)
             binding.btnLiveDataTimer.id -> startActivity(TimerLiveDataActivity::class.java)
             binding.btnLiveDataMultiFragment.id -> startActivity(com.wjd.jetpacklearn.livedata.multi_fragment.MultiFragmentActivity::class.java)
-            binding.btnRoom.id -> startActivity()
+            binding.btnRoom.id -> startActivity(RoomActivity::class.java)
         }
     }
 

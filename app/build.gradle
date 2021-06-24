@@ -58,6 +58,11 @@ dependencies {
     implementation "io.reactivex.rxjava3:rxjava:3.0.0"
     implementation 'io.reactivex.rxjava3:rxandroid:3.0.0'
 
+    //kotlin协程
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$kotlin_coroutines"
+    // Android 平台需要额外导入 kotlinx-coroutines-android
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$kotlin_coroutines"
+
     //room
     def room_version = "2.2.6"
     implementation "androidx.room:room-runtime:$room_version"

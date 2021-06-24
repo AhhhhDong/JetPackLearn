@@ -23,7 +23,7 @@ class StudentAdapter : RecyclerView.Adapter<StudentAdapter.ViewHolder>() {
         val item = data[position]
         holder.binding.tvNum.text = "编号:${item.id}"
         holder.binding.tvName.text = "姓名:${item.name}"
-        holder.binding.tvAge.text = "年龄:${item.name}"
+        holder.binding.tvAge.text = "年龄:${item.age}"
     }
 
     class ViewHolder(val binding: ItemStudentBinding) : RecyclerView.ViewHolder(binding.root)
