@@ -40,6 +40,7 @@ class RoomActivity : AppCompatActivity(), View.OnClickListener {
         viewModel = ViewModelProvider(this).get(RoomViewModel::class.java)
         viewModel.studentListLiveData.observe(this, Observer {
             studentAdapter?.run {
+                data.clear()
                 data.addAll(it)
                 notifyDataSetChanged()
             }
